@@ -2,11 +2,9 @@ const guessGame = (score = 0, maxrange = 2) => {
 	
 
 	let computerGuess = Math.floor(Math.random() * maxrange) + 1;
-	console.log( computerGuess);
-    let userGuess = Number(prompt(`Guess the number between 1 and ${maxrange}: `));
-    console.log(userGuess);
 
-	// guesser(maxrange, score)
+    let userGuess = Number(prompt(`Guess the number between 1 and ${maxrange}: `));
+	
 	while(userGuess !== computerGuess) {
 		if(computerGuess > userGuess) {
 		console.log("Your guess is too low, try again: ");
